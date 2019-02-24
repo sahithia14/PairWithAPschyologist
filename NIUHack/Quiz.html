@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="quizcss.css">
+</head>
+<body onLoad="displayInstructions()">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a id="quiztitle" class="nav-link" href="page2.html">Mental Health Information <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Psych.html">Psychologist</a>
+        </ul>
+    </div>
+</nav>
+<h1>Mental Health Quiz</h1>
+<div id="idDisplayInstructions"></div>
+<br>
+<div id="idStudent"></div>
+<input type="text" class="buttons" id="idTypeOfStudent">
+<input type="button" class="buttons" value="Next" id="idMove" onClick="student()">
+<div id="idStressLevel"></div>
+<input type="button" class= "buttons" value="Short Term" id="idShortTerm" onClick="shortTermStress()">
+<input type="button" class= "buttons" value="Long Term" id="idLongTerm" onClick="longTermStress()">
+<div id="idCauseOfStress"></div>
+<select id = "idActualCauseOfStress">
+    <option value="Grades">Grades</option>
+    <option value="Extracurriculars">Extracurriculars</option>
+    <option value="Personal Life">Personal Life</option>
+    <option value="Social Life">Social Life</option>
+    <option value="Job">Job</option>
+</select>
+<select id= "idCollegeCauseOfStress">
+    <option value="Grades">Grades</option>
+    <option value="Extracurriculars">Extracurriculars</option>
+    <option value="Personal Life">Personal Life</option>
+    <option value="Social Life">Social Life</option>
+    <option value="Job">Job</option>
+    <option value="Money">Money</option>
+</select>
+<select id= "idActualLongCauseOfStress">
+    <option value="Grades">Grades</option>
+    <option value="Extracurriculars">Extracurriculars</option>
+    <option value="Personal Life">Personal Life</option>
+    <option value="Social Life">Social Life</option>
+    <option value="Job">Job</option>
+    <option value="Traumatic Event">Traumatic Event</option>
+</select>
+<select id="idCollegeLongCauseOfStress">
+    <option value="Grades">Grades</option>
+    <option value="Extracurriculars">Extracurriculars</option>
+    <option value="Personal Life">Personal Life</option>
+    <option value="Social Life">Social Life</option>
+    <option value="Job">Job</option>
+    <option value="Money">Money</option>
+    <option value="Traumatic Event">Traumatic Event</option>
+</select>
+<input type="button" class= "buttons" value="Next" id="idHighSchoolShortMoveWithCause" onClick="shortTermStressQuestions()">
+<input type="button" class= "buttons" value="Next" id="idCollegeShortMoveWithCause" onClick="shortTermStressQuestions()">
+<input type="button" class= "buttons"value="Next" id="idHighSchoolLongMoveWithCause" onClick="longTermStressQuestions()">
+<input type="button" class= "buttons" value="Next" id="idCollegeLongMoveWithCause" onClick="longTermStressQuestions()">
+<div id="idQuestion"></div>
+<input type="text" class= "buttons" id="idSpecificQuestion">
+<input type="button" class= "buttons" value="Next" id="idNextQuestion" onClick="goShortNextQuestion()">
+<input type="button"class= "buttons" value="Next" id="idNextLongQuestion" onClick="goLongNextQuestion()">
+<div id="idPsychologists"></div>
+
+</body>
+</html>
